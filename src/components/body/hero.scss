@@ -1,0 +1,29 @@
+.hero {
+  height: calc(100vh - 37px - 82px);
+  background-size: contain;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("../images/pbc-hero.jpeg");
+
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 1em;
+  box-shadow: 0px 2px 5px black;
+
+  .hero-text {
+    margin-top: 40vh;
+    margin-left: 10vw;
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+    p {
+      max-width: 400px;
+    }
+  }
+}

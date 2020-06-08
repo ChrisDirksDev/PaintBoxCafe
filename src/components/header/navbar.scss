@@ -1,0 +1,13 @@
+.navbar {
+  max-height: 50px;
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dbbb70;
+  border: 1px solid black;
+  .logo {
+    align-self: flex-start;
+    width: 400px;
+  }
+}

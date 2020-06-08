@@ -1,0 +1,12 @@
+.sticky-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em;
+  span ~ span {
+    margin-left: 15px;
+  }
+}

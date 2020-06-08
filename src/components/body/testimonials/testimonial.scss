@@ -1,0 +1,21 @@
+.testimonial {
+  max-width: 550px;
+  display: flex;
+  .icon {
+    img {
+      width: 150px;
+      padding: 1em;
+    }
+  }
+  .testimonial-text {
+    padding-top: 20px;
+    font-style: italic;
+    .name {
+      display: flex;
+      img {
+        width: 150px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

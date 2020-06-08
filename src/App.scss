@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-size: 18px;
+  font-family: "Poppins", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Annie Use Your Telescope", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+.app {
+  background-color: #dbbb70;
+  width: 100%;
+  max-width: 2560px;
+  min-height: 100vh;
+  .app-header {
+    display: flex;
+    flex-direction: column;
+    & > div {
+      flex: 1;
+    }
+  }
+}

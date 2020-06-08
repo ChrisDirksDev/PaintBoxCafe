@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  max-height: 400px;
+  padding: 1em;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 0.15) 70%
+  );
+  .about-left {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      border-bottom: 1px solid black;
+    }
+  }
+  .about-right {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 400px;
+      box-shadow: 2px 2px 5px;
+    }
+  }
+}
