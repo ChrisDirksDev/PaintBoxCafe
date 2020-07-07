@@ -6,7 +6,7 @@
       {
         "name": "HALF AND HALF",
         "description": "Create your own combo! Choose two smaller portions from any of our sandwiches, salads, or soup of the day!",
-        "price": "13"
+        "price": "13.00"
       },
       {
         "name": "ONE AND A HALF",
@@ -218,14 +218,6 @@
         "name": "ASSORTED HOT TEAS",
         "description": "2.00"
       }
-    ]
-  },
-  {
-    "title": "",
-    "className": "host",
-    "menuItems": [
-      "NEED A PLACE TO HOST YOUR NEXT PARTY OR BUSINESS MEETING?",
-      "We can help! We can also provide special order bakery items!"
     ]
   }
 ]

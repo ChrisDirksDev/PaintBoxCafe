@@ -4,9 +4,6 @@ import { Testimonial } from "./testimonial"
 import "./testimonials.scss"
 
 export const Testimonals = () => {
-  const text =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quo necessitatibus quidem, nesciunt modi quasi laudantium molestias, ullam nam, rem exercitationem voluptate esse explicabo saepe. Culpa ut natus delectus perferendis?"
-
   return (
     <div className="testimonials">
       <h1>WHAT PEOPLE ARE SAYING</h1>

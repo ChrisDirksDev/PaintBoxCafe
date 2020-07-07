@@ -1,7 +1,26 @@
-.header {
+.app-header {
   display: flex;
   flex-direction: column;
   & > div {
     flex: 1;
+  }
+
+  .headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .headroom--unfixed {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .headroom--unpinned,
+  .headroom--pinned {
+    position: fixed;
+    opacity: 1;
   }
 }

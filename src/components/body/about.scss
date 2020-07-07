@@ -1,29 +1,44 @@
+@import "../../app-variables.scss";
+
 .about {
   display: flex;
-  justify-content: space-between;
-  max-height: 400px;
+  flex-direction: column;
+  align-items: center;
+  max-height: 600px;
   padding: 1em;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 1) 60%,
-    rgba(255, 255, 255, 0.15) 70%
-  );
-  .about-left {
-    flex: 1;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    h2 {
-      border-bottom: 1px solid black;
+  // background: linear-gradient(
+  //   to left,
+  //   rgba(255, 255, 255, 1) 60%,
+  //   rgba(255, 255, 255, 0.15) 70%
+  // );
+  .title {
+    h1 {
+      margin: 10px;
+      text-decoration: underline;
     }
   }
-  .about-right {
-    flex: 3;
+
+  .about-content {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    img {
-      height: 400px;
-      box-shadow: 2px 2px 5px;
+    .about-left {
+      flex: 1;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        border-bottom: 1px solid black;
+        align-self: start;
+      }
+    }
+    .about-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 400px;
+        box-shadow: 2px 2px 5px;
+      }
     }
   }
 }

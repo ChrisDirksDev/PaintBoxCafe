@@ -1,0 +1,51 @@
+@import "../../app-variables.scss";
+
+.footer {
+  background-color: $primary-color;
+  height: 400px;
+  .footer-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .footer-content {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      max-width: $content-width;
+      .footer-column ~ .footer-column {
+        margin-left: 50px;
+      }
+      .column-items {
+        & > * ~ * {
+          padding-top: 15px;
+        }
+      }
+      .footer-column {
+        flex: 1;
+        max-width: 400px;
+        .column-title {
+          border-bottom: 1px solid black;
+        }
+        .location,
+        .phone,
+        .email {
+          display: flex;
+          svg {
+            padding-right: 10px;
+          }
+        }
+        .email,
+        .phone {
+          align-items: center;
+        }
+      }
+    }
+    .bottom-links {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+  }
+}

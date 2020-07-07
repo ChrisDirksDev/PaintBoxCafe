@@ -1,10 +1,15 @@
 .image-band {
   display: flex;
-  max-height: 400px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  max-height: 420px;
+  width: 100%;
+  max-width: 1200px;
+  * {
+    box-sizing: border-box;
+  }
+
   & > img {
     flex: 1;
-    height: 400px;
+    max-height: 500px;
+    max-width: 500px;
   }
 }
