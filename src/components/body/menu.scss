@@ -1,8 +1,9 @@
+@import "../../app-variables.scss";
+
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
   font-size: 16px;
 
   h1,
@@ -12,109 +13,118 @@
     margin: 0;
   }
 
-  .menu-page {
+  .menu-content {
+    display: flex;
     display: flex;
     flex: 1;
-    max-width: 1600px;
+    max-width: $content-width;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    .menu-section-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1;
-      .group-header {
-        border-bottom: 1px solid black;
-      }
-      .menu-section:nth-child(1) {
-        margin-right: 30px;
-      }
-      .menu-section:nth-child(2) {
-        margin-left: 30px;
-      }
-      .group-sections {
-        display: flex;
-        width: 100%;
-      }
-    }
-    .menu-section {
-      padding-top: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid black;
+    .menu-page {
       display: flex;
       flex: 1;
       flex-direction: column;
-      .title {
-        border-bottom: 1px solid black;
-        align-self: start;
-      }
-      .disclaimer {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-      }
-      .menu-items {
-        margin-top: 15px;
+      width: 100%;
+      .menu-section-group {
         display: flex;
-        .column:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        .group-header {
+          border-bottom: 1px solid black;
+        }
+        .menu-section:nth-child(1) {
           margin-right: 12px;
         }
-        .column:nth-child(2) {
+        .menu-section:nth-child(2) {
           margin-left: 12px;
         }
-        .column {
+        .group-sections {
           display: flex;
-          flex-direction: column;
-          flex: 1;
-          .menu-item {
+          width: 100%;
+        }
+      }
+      .menu-section {
+        padding-top: 15px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .title {
+          border-bottom: 1px solid black;
+          align-self: start;
+        }
+        .disclaimer {
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+        }
+        .menu-items {
+          margin-top: 15px;
+          display: flex;
+          .column:nth-child(1) {
+            margin-right: 12px;
+          }
+          .column:nth-child(2) {
+            margin-left: 12px;
+          }
+          .column {
             display: flex;
-            justify-content: space-between;
-            .text-container {
-              p {
-                font-size: 16px;
-                margin-top: 0.1em;
-                margin-bottom: 0.5em;
+            flex-direction: column;
+            flex: 1;
+            .menu-item {
+              display: flex;
+              justify-content: space-between;
+              .text-container {
+                p {
+                  font-size: 16px;
+                  margin-top: 0.1em;
+                  margin-bottom: 0.5em;
+                }
+              }
+              .price {
+                font-weight: bold;
               }
             }
-            .price {
-              font-weight: bold;
+          }
+        }
+
+        &.bakery-case,
+        &.special-order,
+        &.drinks {
+          .menu-item {
+            padding: 0.5em;
+            .text-container {
+              flex: 1;
+              display: flex;
+              align-items: flex-start;
+
+              p {
+                padding-left: 15px;
+                margin: 0;
+                line-height: 32px;
+              }
             }
           }
         }
-      }
 
-      &.bakery-case,
-      &.special-order,
-      &.drinks {
-        .menu-item {
-          padding: 0.5em;
-          .text-container {
-            flex: 1;
-            display: flex;
-            align-items: flex-start;
-
-            p {
-              padding-left: 15px;
+        &.soup-of-day {
+          .menu-items {
+            flex-direction: column;
+            .column {
+              flex-direction: row;
               margin: 0;
-              line-height: 32px;
-            }
-          }
-        }
-      }
-
-      &.soup-of-day {
-        .menu-items {
-          flex-direction: column;
-          .column {
-            flex-direction: row;
-            margin: 0;
-            .menu-item ~ .menu-item {
-              margin-left: 20px;
+              .menu-item ~ .menu-item {
+                margin-left: 20px;
+              }
             }
           }
         }
       }
     }
-  }
-
-  .page-2 {
-    border-bottom: 1px solid black;
   }
 }

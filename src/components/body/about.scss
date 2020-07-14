@@ -1,44 +1,31 @@
 @import "../../app-variables.scss";
 
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 600px;
-  padding: 1em;
-  // background: linear-gradient(
-  //   to left,
-  //   rgba(255, 255, 255, 1) 60%,
-  //   rgba(255, 255, 255, 0.15) 70%
-  // );
   .title {
     h1 {
+      position: relative;
       margin: 10px;
-      text-decoration: underline;
+      &::after {
+        content: "";
+        background-image: url("../images/pbc-underline.svg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+      }
     }
   }
-
-  .about-content {
-    width: 100%;
+  .about-left {
+    flex: 1;
     display: flex;
-    .about-left {
-      flex: 1;
-      padding: 2em;
-      display: flex;
-      flex-direction: column;
-      h2 {
-        border-bottom: 1px solid black;
-        align-self: start;
-      }
-    }
-    .about-right {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      img {
-        height: 400px;
-        box-shadow: 2px 2px 5px;
-      }
+    flex-direction: column;
+    max-width: 700px;
+    h2 {
+      border-bottom: 1px solid black;
+      align-self: start;
     }
   }
 }

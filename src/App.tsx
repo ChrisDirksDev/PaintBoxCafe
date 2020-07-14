@@ -6,7 +6,7 @@ import { Hero } from "./components/body/hero"
 import { About } from "./components/body/about"
 import { Testimonals } from "./components/body/testimonials/testimonials"
 import { Menu } from "./components/body/menu"
-import { ContactCater } from "./components/body/contactCater"
+import { Cater } from "./components/body/cater"
 import { Footer } from "./components/footer/footer"
 
 import VisibilitySensor from "react-visibility-sensor"
@@ -46,7 +46,7 @@ function App() {
       </VisibilitySensor>
       <VisibilitySensor onChange={setCaterVisible} partialVisibility>
         <div id="contact">
-          <ContactCater />
+          <Cater />
         </div>
       </VisibilitySensor>
       <VisibilitySensor onChange={setContactVisible}>

@@ -3,30 +3,62 @@
 .hero {
   height: calc(100vh - 50px);
   background-size: contain;
-  background: url("../images/pbc-hero.jpeg");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("../images/hero-sandwich.jpg");
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   display: flex;
   .overlay {
-    backdrop-filter: blur(5px);
     flex: 1;
     padding: 1em;
-    background-color: rgba($color: #fff, $alpha: 0.6);
+
     .hero-text {
-      width: fit-content;
       color: black;
-      margin-top: 40vh;
+      margin-top: 30vh;
       margin-left: 10vw;
       h1 {
         font-size: 4em;
         margin: 0;
       }
-      p {
-        max-width: 620px;
+    }
+    .hero-image-container {
+      display: none;
+      margin-left: 30px;
+      width: 750px;
+      height: 750px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      .hero-image {
+        margin: 0 auto;
+        height: 100%;
       }
     }
-    .hero-image {
-    }
+  }
+  .custom-shape-divider-bottom-1594258843 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1594258843 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1594258843 .shape-fill {
+    fill: $secondary-color;
   }
 }

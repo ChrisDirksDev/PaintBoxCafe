@@ -2,32 +2,37 @@
 
 .footer {
   background-color: $primary-color;
-  height: 400px;
+
   .footer-content-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+
     .footer-content {
       flex: 1;
       display: flex;
       justify-content: space-evenly;
       width: 100%;
       max-width: $content-width;
+      padding-top: 60px;
+      padding-bottom: 60px;
       .footer-column ~ .footer-column {
         margin-left: 50px;
       }
       .column-items {
-        & > * ~ * {
+        & > * {
           padding-top: 15px;
         }
       }
       .footer-column {
         flex: 1;
-        max-width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
         .column-title {
           border-bottom: 1px solid black;
+          margin: 0;
         }
         .location,
         .phone,

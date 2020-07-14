@@ -91,48 +91,50 @@ export const Menu = () => {
 
   return (
     <div className="menu" key="menu">
-      <h1>PAINTBOX MENU</h1>
-      <img src={Fork} alt="fork" />
-      <div className="menu-page page-1">
-        {sections[0]}
-        <div className="menu-section-group">
-          <h2 className="group-header">SANDWICHES</h2>
-          <p className="group-disclaimer">
-            All sandwiches come with a side of sea-salt chips, sweet potato
-            chips, or fruit.
-          </p>
-          {/* <img className="paintbox-sandwich" src={Sandwich} alt="sandwich" /> */}
-          <div className="group-sections">
-            {sections[1]}
-            {sections[2]}
+      <div className="menu-content">
+        <h1>PAINTBOX MENU</h1>
+        <img src={Fork} alt="fork" />
+        <div className="menu-page page-1">
+          {sections[0]}
+          <div className="menu-section-group">
+            <h2 className="group-header">SANDWICHES</h2>
+            <p className="group-disclaimer">
+              All sandwiches come with a side of sea-salt chips, sweet potato
+              chips, or fruit.
+            </p>
+            {/* <img className="paintbox-sandwich" src={Sandwich} alt="sandwich" /> */}
+            <div className="group-sections">
+              {sections[1]}
+              {sections[2]}
+            </div>
           </div>
+          {sections[3]}
         </div>
-        {sections[3]}
-      </div>
-      <div className="menu-page page-2">
-        {sections[4]}
-        <div className="menu-section-group">
-          <div className="group-sections">
-            {sections[5]}
-            {sections[6]}
+        <div className="menu-page page-2">
+          {sections[4]}
+          <div className="menu-section-group">
+            <div className="group-sections">
+              {sections[5]}
+              {sections[6]}
+            </div>
           </div>
-        </div>
-        <div className="menu-section-group">
-          <div className="group-sections">
-            {sections[7]}
-            {/* carrot image */}
+          <div className="menu-section-group">
+            <div className="group-sections">
+              {sections[7]}
+              {/* carrot image */}
+            </div>
           </div>
-        </div>
-        <div className="menu-section-group">
-          <div className="group-sections">
-            {sections[8]}
-            {sections[9]}
+          <div className="menu-section-group">
+            <div className="group-sections">
+              {sections[8]}
+              {sections[9]}
+            </div>
           </div>
-        </div>
-        <div className="menu-section-group">
-          <div className="group-sections">
-            {sections[10]}
-            {/* socials */}
+          <div className="menu-section-group">
+            <div className="group-sections">
+              {sections[10]}
+              {/* socials */}
+            </div>
           </div>
         </div>
       </div>
