@@ -8,23 +8,26 @@ export const Cater = () => {
     <div className="catering">
       <FadePanel className="cater">
         <div className="title">
-          <h1>Planning an Event?</h1>
+          <h1>Catering & Events</h1>
         </div>
-        <h2>CATERING & EVENTS</h2>
+        <h2>Planning something special?</h2>
         <p>
           In addition to our location in Osage Beach, the staff of the Paint Box
           Café provides event planning and catering for small groups (up to 50
-          guests). With our focus on these more intimate venues, we can provide
-          attention to every detail, making your entertaining experience much
-          less stressful and significantly more enjoyable.
+          guests). Whether it's a corporate get-together or something personal
+          for the family, we've got you covered.
         </p>
         <p>
-          Whether you are in need of appetizers, hand-crafted breads, main
-          dishes, sumptuous salads, or decadent desserts, we can help. Call the
-          café today to discuss the details. 573.552.7404.
+          With our focus on these more intimate venues, we can provide attention
+          to every detail, making your entertaining experience much less
+          stressful and significantly more enjoyable.Whether you are in need of
+          appetizers, hand-crafted breads, main dishes, sumptuous salads, or
+          decadent desserts, we can help.
         </p>
+        <p>Call the café today to discuss the details! (573) 552-7404</p>
       </FadePanel>
       <div className="cater-testimonial">
+        <h2>We could do the same for you!</h2>
         <div className="cater-testimonial-wrapper">
           <p>
             "We hosted a baby shower at the Paint Box today and its couldn't of

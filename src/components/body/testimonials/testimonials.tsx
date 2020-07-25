@@ -6,7 +6,7 @@ import "./testimonials.scss"
 export const Testimonals = () => {
   return (
     <div className="testimonials">
-      <h1>WHAT PEOPLE ARE SAYING</h1>
+      <h1>Here's What Our Hungry Customers Say...</h1>
       <div className="testimonials-container">
         <Testimonial
           headline="Amazing food! It was really good!"

@@ -46,6 +46,22 @@
         .phone {
           align-items: center;
         }
+
+        &.social {
+          a {
+            font-family: "Poppins", serif;
+            font-weight: bold;
+            &:visited {
+              color: black;
+            }
+            &:hover {
+              color: white;
+            }
+          }
+          .MuiSvgIcon-root {
+            font-size: 32px;
+          }
+        }
       }
     }
     .bottom-links {

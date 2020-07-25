@@ -7,8 +7,9 @@ export const Hero = () => {
     <div className="hero">
       <div className="overlay">
         <div className="hero-text">
-          <h1>NEED SOME LUNCH?</h1>
-          <p>
+          <h1>Ready for a yummy lunch?</h1>
+          <h1>We're open and ready.</h1>
+          <p className="description-text">
             Open weekdays daily from 10am-3pm. Dine-in with us or grab some
             carryout.
           </p>

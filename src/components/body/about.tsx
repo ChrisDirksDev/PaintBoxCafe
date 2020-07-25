@@ -6,10 +6,10 @@ export const About = () => {
   return (
     <FadePanel className="about">
       <div className="title">
-        <h1>DISCOVER PAINTBOX CAFE</h1>
+        <h1>Discover Paintbox Cafe...</h1>
       </div>
       <div className="about-left">
-        <h2>Seriously good food in a not-so-serious setting.</h2>
+        <h2>Seriously good food in a not-so-serious setting!</h2>
         <p>
           Seriously good food in a not-so-serious setting. Feed your inner
           artist - build your own meal! Sandwiches, soups, salads, and endless

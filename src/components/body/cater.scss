@@ -6,12 +6,12 @@
   .cater {
     background: linear-gradient(
         to right,
-        rgba(255, 255, 255, 0) 35%,
+        rgba(255, 255, 255, 0) 30%,
         rgba(255, 255, 255, 1) 75%
       ),
       url("../images/paintbox-cateringevents.jpg");
 
-    background-size: 70%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left;
     .panel-wrapper {
@@ -19,7 +19,7 @@
 
       &::before {
         transform: scaleX(-1);
-        background-size: 850px 100%;
+        background-size: 925px 100%;
       }
       .panel-content {
         text-align: left;
@@ -34,17 +34,14 @@
           content: "";
           background-image: url("../images/pbc-underline.svg");
           background-size: 100% 100%;
-          width: 100%;
+          width: 120%;
           height: 40px;
           border-radius: 4px;
           position: absolute;
-          bottom: -20px;
-          left: 0;
+          bottom: -35px;
+          left: -10%;
         }
       }
-    }
-    h2 {
-      text-decoration: underline;
     }
     p {
       max-width: 700px;
@@ -58,13 +55,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 60px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: $content-width;
+    flex-direction: column;
+    h2 {
+      margin-top: 15px;
+      margin-bottom: 0px;
+      align-self: start;
+    }
     .cater-testimonial-wrapper {
       padding: 1em;
       width: 100%;
       display: flex;
+      flex-direction: column;
+
       p {
         font-style: italic;
       }

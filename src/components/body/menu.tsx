@@ -92,16 +92,15 @@ export const Menu = () => {
   return (
     <div className="menu" key="menu">
       <div className="menu-content">
-        <h1>PAINTBOX MENU</h1>
+        <h1>Paintbox Cafe Menu</h1>
         <img src={Fork} alt="fork" />
         <div className="menu-page page-1">
           {sections[0]}
           <div className="menu-section-group">
-            <h2 className="group-header">SANDWICHES</h2>
-            <p className="group-disclaimer">
-              All sandwiches come with a side of sea-salt chips, sweet potato
-              chips, or fruit.
-            </p>
+            <h2 className="group-header sandwiches">
+              *ALL SANDWICHES COME WITH A SIDE OF SEA-SALT CHIPS, SWEET POTATO
+              CHIPS, OR FRUIT!
+            </h2>
             {/* <img className="paintbox-sandwich" src={Sandwich} alt="sandwich" /> */}
             <div className="group-sections">
               {sections[1]}
@@ -148,16 +147,14 @@ const data = [
     className: "combos",
     menuItems: [
       {
-        name: "HALF AND HALF",
+        name: "HALF AND HALF____ 13.00",
         description:
           "Create your own combo! Choose two smaller portions from any of our sandwiches, salads, or soup of the day!",
-        price: "13.00",
       },
       {
-        name: "ONE AND A HALF",
+        name: "ONE AND A HALF____ 14.25",
         description:
           "Create your own combo! Choose one whole portion of any sandwich, salad, or soup of the day and a half portion of any other!",
-        price: "14.25",
       },
     ],
   },
@@ -263,7 +260,7 @@ const data = [
       {
         name: "SOUTHWEST CHICKEN",
         description:
-          "Mixed greens, chicken breast, colby jack cheese, roaasted corn, black beans, and tortilla strips. Pair with our chipotle ranch, avocado cream, or house made ranch!",
+          "Mixed greens, chicken breast, colby jack cheese, roasted corn, black beans, and tortilla strips. Pair with our chipotle ranch, avocado cream, or house made ranch!",
       },
       {
         name: "INNER ARTIST",
@@ -276,7 +273,7 @@ const data = [
     title: "FAMILY-SIZED SALADS 34.00",
     className: "family-salad",
     disclaimer:
-      "Go big or go home(or back to work). Get any of our salads family-sized with a pint of our dressing to take away! (serves 6-8)",
+      "Go big or go home (or back to work). Get any of our salads family-sized with a pint of our dressing to take away! (serves 6-8)",
   },
   {
     title: "SOUP OF THE DAY",
@@ -311,11 +308,11 @@ const data = [
     menuItems: [
       {
         name: "COOKIES",
-        description: "1.50 per cookie or 13.00 per dozen",
+        description: "1.50 each or 13.00 per dozen",
       },
       {
         name: "HAM & CHEDDER ROLLS",
-        description: "1.75 per roll or 18.00 per dozen",
+        description: "1.75 each or 18.00 per dozen",
       },
       {
         name: "TRIPLE CHOCOLATE CAKES",
@@ -323,7 +320,7 @@ const data = [
       },
       {
         name: "SCONES",
-        description: "3.50 per scone or 30.00 per dozen",
+        description: "3.50 each or 30.00 per dozen",
       },
       {
         name: "CARROT CAKE",
@@ -331,11 +328,11 @@ const data = [
       },
       {
         name: "CRANBERRY WALNUT ROLL",
-        description: "1.75 per roll 18.00 per dozen",
+        description: "1.75 each 18.00 per dozen",
       },
       {
         name: "PAINT BOX BUN",
-        description: "1.50 per roll 15.00 per dozen",
+        description: "1.50 each 15.00 per dozen",
       },
       {
         name: "GRANOLA",
@@ -357,7 +354,7 @@ const data = [
       },
       {
         name: "MUFFINS",
-        description: "3.00 per muffin or 30.00 per dozen",
+        description: "3.00 each or 30.00 per dozen",
       },
       {
         name: "CUSTOM REQUESTS",
